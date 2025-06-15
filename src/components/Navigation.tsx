@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Calendar } from "lucide-react";
@@ -18,27 +17,27 @@ export function Navigation() {
           <div className="text-2xl font-bold bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent">
             Gaurav Anand
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('about')}
               className="hover:text-primary transition-colors duration-300"
             >
               About
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('projects')}
               className="hover:text-primary transition-colors duration-300"
             >
               Projects
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('skills')}
               className="hover:text-primary transition-colors duration-300"
             >
               Skills
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="hover:text-primary transition-colors duration-300"
             >
@@ -48,9 +47,9 @@ export function Navigation() {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button 
+            <Button
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://calendly.com/gauravanand867/15-minute-meeting-clone', '_blank')}
             >
               <Calendar className="mr-2 h-4 w-4" />
               Schedule a Call

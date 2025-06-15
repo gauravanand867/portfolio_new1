@@ -10,7 +10,7 @@ export function ProjectsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent">
             Featured Work
           </h2>
-          
+
           {/* Featured Project - Tourbee.in */}
           <div className="mb-16">
             <Card className="bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all duration-300 overflow-hidden">
@@ -47,7 +47,7 @@ export function ProjectsSection() {
                       <li>• Code review processes & quality assurance</li>
                     </ul>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <h4 className="text-xl font-semibold text-primary flex items-center">
                       <Sparkles className="mr-2 h-5 w-5" />
@@ -58,7 +58,7 @@ export function ProjectsSection() {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="bg-primary/5 p-6 rounded-lg border border-primary/10">
                   <h4 className="text-lg font-semibold mb-3">Technical Highlights</h4>
                   <div className="flex flex-wrap gap-2">
@@ -79,7 +79,14 @@ export function ProjectsSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   Enterprise Applications
-                  <Github className="h-5 w-5 text-muted-foreground" />
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-5 w-5 text-muted-foreground hover:text-primary"
+                    onClick={() => window.open('https://github.com/gauravanand867', '_blank')}
+                  >
+                    <Github className="h-5 w-5" />
+                  </Button>
                 </CardTitle>
                 <CardDescription>
                   High-performance applications for enterprise clients
@@ -103,7 +110,14 @@ export function ProjectsSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   Full-Stack Projects
-                  <Github className="h-5 w-5 text-muted-foreground" />
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-5 w-5 text-muted-foreground hover:text-primary"
+                    onClick={() => window.open('https://github.com/gauravanand867', '_blank')}
+                  >
+                    <Github className="h-5 w-5" />
+                  </Button>
                 </CardTitle>
                 <CardDescription>
                   MERN stack applications with modern UX
